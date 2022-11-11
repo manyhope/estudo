@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Fatorial</title>
+     <script type="text/javascript" src="script.js"></script>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18 pt Arial;
+            width: 100px;
+        }
+        </style>
+        
+</head>
+<body>
+    <h1> Numero Fatorial </h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="button" value="Resultado" onclick="Fatorial()">
+    <div id="res">Resultado</div>
+    <script>
+        function Fatorial(){
+            var numero = parseInt (document.getElementById('txtn1').value);
+            var res = document.getElementById('res');
+            var resultado = 1;
+            for (var count=1 ; count<=numero ; count++) {
+                resultado *= count;   
+            }
+            res.innerHTML = resultado;
+        }
+    </script>
+    
+    
+</body>
+</html>

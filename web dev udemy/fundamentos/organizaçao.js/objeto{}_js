@@ -1,0 +1,8 @@
+const prod1={}
+prod1.nome = 'celular ultra mega'
+prod1.preco= 4998.98
+prod1['Desconto']= 0.40 //evitar atributos com espaco
+let precofinal = prod1.preco * 0.40
+console.log(precofinal)
+
+console.log(prod1)
